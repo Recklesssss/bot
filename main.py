@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 # Load environment variables from .env file
 load_dotenv()
 
-api_id = int(os.getenv("API_ID"))  # Convert to int
+api_id = os.getenv("API_ID")  # Convert to int
 api_hash = os.getenv("API_HASH")
 bot_token = os.getenv("BOT_TOKEN")
 
