@@ -41,7 +41,7 @@ async def mention_all(client, message):
         if len(mention_text) > 4096:
             mention_text = "Too many users to mention at once."
 
-        await message.reply_text(mention_text, disable_web_page_preview=True, parse_mode="HTML")
+        await message.reply_text(mention_text, disable_web_page_preview=True)
     else:
         await message.reply_text("No users found!")
 
